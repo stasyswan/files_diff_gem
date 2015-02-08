@@ -1,5 +1,6 @@
 FilesDiffGem::Engine.routes.draw do
-	resources :file_diffs do
-		post "find_deffs"
-	end
+	get "file_diffs/index"
+	post "file_diffs/find_deffs"
+
+	root to: "file_diffs#index"
 end

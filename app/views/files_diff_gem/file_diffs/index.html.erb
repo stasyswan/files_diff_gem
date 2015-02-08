@@ -1,8 +1,8 @@
 <div class="center_div">
-	<%#= simple_form_for @new_files, :url => files_diff_gem.file_diff_find_deffs_path, :method => :post, :html => { :class => 'form-horizontal', :multipart => true } do |f| %>
-		<%#= f.error_notification %>				
-		<%#= f.input :doc_current, :as => :file, :required => true%>
-		<%#= f.input :doc_origin, :as => :file, :required => true%>
-		<%#= f.submit("Diff", :class => "btn btn-primary")%>
-	<%# end %>
+	<%= simple_form_for @new_files, :url => files_diff_gem.file_diffs_find_deffs_path, :method => :post, :html => { :class => 'form-horizontal', :multipart => true } do |f| %>
+		<%= f.error_notification %>				
+		<%= f.input :doc_current, :as => :file, :required => true%>
+		<%= f.input :doc_origin, :as => :file, :required => true%>
+		<%= f.submit("Diff", :class => "btn btn-primary")%>
+	<% end %>
 </div>

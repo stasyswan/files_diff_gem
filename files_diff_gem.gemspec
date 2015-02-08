@@ -18,25 +18,16 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.12"
 
-  # s.add_development_dependency "sqlite3"
-
   s.add_dependency 'diffy'
   s.add_dependency 'quiet_assets'
 
   s.add_dependency 'jquery-rails'
   s.add_dependency 'jquery-ui-rails'
-  s.add_dependency 'remotipart'
   s.add_dependency 'pg'
 
-  s.add_dependency 'less-rails-bootstrap'
   s.add_development_dependency "therubyracer"
 
-  s.add_dependency 'twitter-bootstrap-rails'
   s.add_dependency 'simple_form'
   s.add_dependency 'paperclip', '~> 4.1'
   s.add_dependency "less-rails"
-
-  # group :assets do
-    s.add_dependency 'uglifier', '>= 1.0.3'
-  # end
 end

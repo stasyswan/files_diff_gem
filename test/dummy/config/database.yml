@@ -4,28 +4,32 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
+  database: file_diff_dev
   adapter: postgresql
   encoding: unicode
-  database: file_diff_dev
+  host: localhost
   pool: 5
-  username: swan
-  password: 9_fynfyfyfhbde_9
+  username: postgres
+  password: password
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
+  database: file_diff_test
   adapter: postgresql
   encoding: unicode
-  database: file_diff_test
+  host: localhost
   pool: 5
-  username: swan
-  password: 9_fynfyfyfhbde_9
+  username: postgres
+  password: password
 
 production:
+  database: file_diff_prod
   adapter: postgresql
   encoding: unicode
-  database: file_diff_prod
+  host: localhost
   pool: 5
-  username: swan
-  password: 9_fynfyfyfhbde_9
+  username: postgres
+  password: password
+  
