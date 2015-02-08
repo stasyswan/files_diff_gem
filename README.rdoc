@@ -1,3 +1,25 @@
 = FilesDiffGem
 
-This project rocks and uses MIT-LICENSE.
+The goal of this task is to develop Ruby application that can compare the content of two files.
+Input parameters for the application are paths of two files 
+The result of program is show the difference between the files. 
+
+From the code prospective, program should be implemented as a component that can be reused in any other applications easily.
+
+How to use:
+
+in Gemfile
+  
+  gem 'files_diff_gem', path: "/path/to/files_diff_gem"
+
+or
+
+  gem 'files_diff_gem', git: 'git@github.com:stasyswan/files_diff_gem.git'
+
+install gem:
+  
+  bundle install
+
+in routes.rb
+
+  mount FilesDiffGem::Engine, at: "/files_diff_gem"

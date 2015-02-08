@@ -7,6 +7,6 @@ test/dummy/tmp/
 test/dummy/.sass-cache
 
 /tmp
-/config/database.yml
+test/dummy/config/database.yml
 /public/assets/
 /public/system/
